@@ -150,6 +150,12 @@ class VersionedParentStore:
         except Exception as exc:
             raise VersionSwitchError("指针没有写上，查询仍指向切换前的版本") from exc
 
+    def active_version(self, document_id: str) -> str | None:
+        """查询目前指向的版本。指针还没写过时是空的。"""
+
+        _token(document_id)
+        return self._active_version(document_id)
+
     def read_parent(self, document_id: str, parent_id: str) -> ParentRecord:
         version = self._active_version(document_id)
         if version is None:
