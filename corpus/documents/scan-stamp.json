@@ -1,0 +1,74 @@
+{
+  "fixture_id": "scan-stamp",
+  "document_id": "syn-seal",
+  "title": "用印留存办法",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "扫描库",
+      "document_ref": "syn-seal",
+      "form": "归档"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [],
+      "text_tables": [],
+      "text_layer_ratio": 0.0,
+      "has_text_layer": false,
+      "image_blocks": [
+        {
+          "text": "用印留存办法。第8.1条外发函件先登记再送印。第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。第8.5条登记簿按年归档。本页没有文本层。",
+          "bbox": [
+            40,
+            40,
+            460,
+            200
+          ],
+          "kind": "body"
+        }
+      ],
+      "image_tables": [],
+      "stamps": [
+        {
+          "covered_text": "第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。"
+        }
+      ]
+    }
+  ],
+  "reference_text": "用印留存办法。第8.1条外发函件先登记再送印。第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。第8.5条登记簿按年归档。本页没有文本层。",
+  "reference_tables": [],
+  "normalized_text": "用印留存办法。第8.1条外发函件先登记再送印。第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。第8.5条登记簿按年归档。本页没有文本层。",
+  "normalized_text_sha256": "68cdfa4773f5ae171c9f78b2c4976e5806d6b1bffa78a5770d716b9c001fa8bb",
+  "expected_reading_order": [
+    "用印留存办法。第8.1条外发函件先登记再送印。第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。第8.5条登记簿按年归档。本页没有文本层。"
+  ],
+  "stamp_covered_text": "第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。",
+  "clauses": [
+    {
+      "clause_number": "第8.1条",
+      "text": "用印留存办法。第8.1条外发函件先登记再送印。",
+      "amounts": []
+    },
+    {
+      "clause_number": "第8.4条",
+      "text": "第8.4条载明单次用印工本费为36元，章面压住这句时普通识别读不到该金额。",
+      "amounts": [
+        "36元"
+      ],
+      "under_stamp": true
+    },
+    {
+      "clause_number": "第8.5条",
+      "text": "第8.5条登记簿按年归档。本页没有文本层。",
+      "amounts": []
+    }
+  ]
+}

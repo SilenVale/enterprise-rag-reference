@@ -1,0 +1,189 @@
+{
+  "notice": "版本关系供后续索引和检索使用。这里只记录状态，不执行切换。",
+  "documents": [
+    {
+      "document_id": "syn-meal",
+      "title": "伙食补贴办法",
+      "query_reads_version": "v1",
+      "switch_complete": false,
+      "note": "新版本正文已经写全，切换尚未完成，查询仍读旧版。",
+      "block_diff": [
+        {
+          "clause_number": "第3.1条",
+          "kind": "不变",
+          "sha256": "d846cc89a0634c11a25e1fb5a74e1e0db0a2d5958be379a9208da725d8fb8dd4"
+        },
+        {
+          "clause_number": "第3.2条",
+          "kind": "变化",
+          "from_amount": "100元/日",
+          "to_amount": "120元/日",
+          "from_sha256": "c9b22050c83f7e56a53a18661ba0dd7d643d132ab7fb55e4a5a48c42fdc52e51",
+          "to_sha256": "c2a17e334002ea60fa17bc816982b17478840a93bd628bc9c6a19a2936d85c29"
+        },
+        {
+          "clause_number": "第3.9条",
+          "kind": "消失",
+          "sha256": "1e3be010eec6e3ab2585339f64efd8a08256bc3020ae4b29382a62f0a7067ecd"
+        },
+        {
+          "clause_number": "第3.5条",
+          "kind": "新增",
+          "amount": "40元",
+          "sha256": "de8953efa7df9a7264537cb02d8e906ab298d4d97da05f93efc492a26853f526"
+        }
+      ],
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/revision-v1.json",
+          "normalized_text_sha256": "81ea00a598f36157a158584cf1f53f06aed61f26f3b3a820d448dda4f143e887"
+        },
+        {
+          "version": "v2",
+          "effective_status": "未生效",
+          "effective_from": "2026-06-01",
+          "effective_to": null,
+          "written_complete": true,
+          "switch_complete": false,
+          "file": "documents/revision-v2.json",
+          "normalized_text_sha256": "09192ff403b7b2d20bc66b08fc4ea22e47b45deb948c2fa2cbcf7e154efeeebe"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-legacy",
+      "title": "旧夜间交通补贴口径",
+      "query_reads_version": null,
+      "default_retrieval": false,
+      "audit_retrieval": true,
+      "versions": [
+        {
+          "version": "v0",
+          "effective_status": "废止",
+          "effective_from": "2022-03-01",
+          "effective_to": "2023-11-30",
+          "file": "documents/abolished.json",
+          "successor_document_id": "syn-rate-table",
+          "successor_clause": "第2.1条",
+          "normalized_text_sha256": "62227ecb829fd9622ff700ba9b8571a974c106411dcda9bb645f7ff3fc7bc4dc"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-duty",
+      "title": "外出办事须知",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/two-column.json",
+          "normalized_text_sha256": "7d932d57c45eb9768c76f8c5ac210ab10e9ffb8068c35b833496f133d40d041c"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-rate-table",
+      "title": "费用标准表",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/cross-page-table.json",
+          "normalized_text_sha256": "9310c4bd0bb22ff3381a85ad5cd4d92e43e1d77281687de4bf9af588e326193e"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-seal",
+      "title": "用印留存办法",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/scan-stamp.json",
+          "normalized_text_sha256": "68cdfa4773f5ae171c9f78b2c4976e5806d6b1bffa78a5770d716b9c001fa8bb"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-submit",
+      "title": "报销交单时限",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/multi-source.json",
+          "normalized_text_sha256": "94da4e720febfdd4500f4c3d2ec47e68114a24e741257675bbd9cc9787ac4d0a"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-comp",
+      "title": "内部津贴分档",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/restricted.json",
+          "normalized_text_sha256": "d4606b4b230d00f83bb9c8a9529862e3bbae86bb1983da470500eb370bb4c5ac"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-clause",
+      "title": "设备租赁限额",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/clause-number.json",
+          "normalized_text_sha256": "eb10d9f2de194e246ef059ecbd12f2692449eeaa6c7e466139bb179899cefe49"
+        }
+      ]
+    },
+    {
+      "document_id": "syn-amount",
+      "title": "一次性补贴",
+      "query_reads_version": "v1",
+      "switch_complete": true,
+      "versions": [
+        {
+          "version": "v1",
+          "effective_status": "生效",
+          "effective_from": "2024-06-01",
+          "effective_to": null,
+          "file": "documents/amount.json",
+          "normalized_text_sha256": "b0f8d32f444111bd98b9b98e874d1707cd5c1c824d223b6a5723779135f517bf"
+        }
+      ]
+    }
+  ]
+}

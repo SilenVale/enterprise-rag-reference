@@ -1,0 +1,110 @@
+{
+  "fixture_id": "two-column",
+  "document_id": "syn-duty",
+  "title": "外出办事须知",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-duty"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第1.4条伙食按第2.3条执行，现行标准100元/日。",
+          "bbox": [
+            320,
+            140,
+            470,
+            180
+          ],
+          "kind": "body"
+        },
+        {
+          "text": "第1.2条办结后按第5.1条交单。未审批的支出不预支。",
+          "bbox": [
+            40,
+            140,
+            180,
+            180
+          ],
+          "kind": "body"
+        },
+        {
+          "text": "第1.3条住宿按第2.2条执行，上限420元/晚。",
+          "bbox": [
+            320,
+            30,
+            470,
+            70
+          ],
+          "kind": "body"
+        },
+        {
+          "text": "第1.1条出发前须完成审批。单次预支不超过750元。",
+          "bbox": [
+            40,
+            30,
+            180,
+            70
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第1.1条出发前须完成审批。单次预支不超过750元。\n第1.2条办结后按第5.1条交单。未审批的支出不预支。\n第1.3条住宿按第2.2条执行，上限420元/晚。\n第1.4条伙食按第2.3条执行，现行标准100元/日。",
+  "reference_tables": [],
+  "normalized_text": "第1.1条出发前须完成审批。单次预支不超过750元。\n第1.2条办结后按第5.1条交单。未审批的支出不预支。\n第1.3条住宿按第2.2条执行，上限420元/晚。\n第1.4条伙食按第2.3条执行，现行标准100元/日。",
+  "normalized_text_sha256": "7d932d57c45eb9768c76f8c5ac210ab10e9ffb8068c35b833496f133d40d041c",
+  "expected_reading_order": [
+    "第1.1条出发前须完成审批。单次预支不超过750元。",
+    "第1.2条办结后按第5.1条交单。未审批的支出不预支。",
+    "第1.3条住宿按第2.2条执行，上限420元/晚。",
+    "第1.4条伙食按第2.3条执行，现行标准100元/日。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第1.1条",
+      "text": "第1.1条出发前须完成审批。单次预支不超过750元。",
+      "amounts": [
+        "750元"
+      ]
+    },
+    {
+      "clause_number": "第1.2条",
+      "text": "第1.2条办结后按第5.1条交单。未审批的支出不预支。",
+      "amounts": []
+    },
+    {
+      "clause_number": "第1.3条",
+      "text": "第1.3条住宿按第2.2条执行，上限420元/晚。",
+      "amounts": [
+        "420元/晚"
+      ]
+    },
+    {
+      "clause_number": "第1.4条",
+      "text": "第1.4条伙食按第2.3条执行，现行标准100元/日。",
+      "amounts": [
+        "100元/日"
+      ]
+    }
+  ]
+}

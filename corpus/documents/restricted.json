@@ -1,0 +1,61 @@
+{
+  "fixture_id": "restricted",
+  "document_id": "syn-comp",
+  "title": "内部津贴分档",
+  "document_type": "制度",
+  "permission": "internal-comp",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "hidden_from_roles": [
+    "实习生"
+  ],
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-comp"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第6.2条核心岗津贴为1800元/月。未转正人员不得查阅本条。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第6.2条核心岗津贴为1800元/月。未转正人员不得查阅本条。",
+  "reference_tables": [],
+  "normalized_text": "第6.2条核心岗津贴为1800元/月。未转正人员不得查阅本条。",
+  "normalized_text_sha256": "d4606b4b230d00f83bb9c8a9529862e3bbae86bb1983da470500eb370bb4c5ac",
+  "expected_reading_order": [
+    "第6.2条核心岗津贴为1800元/月。未转正人员不得查阅本条。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第6.2条",
+      "text": "第6.2条核心岗津贴为1800元/月。未转正人员不得查阅本条。",
+      "amounts": [
+        "1800元/月"
+      ]
+    }
+  ]
+}
