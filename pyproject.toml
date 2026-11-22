@@ -9,6 +9,7 @@ dependencies = [
     "elasticsearch>=8.15,<9",
     "minio>=7.2",
     "psycopg[binary]>=3.2",
+    "sentence-transformers>=3.0",
 ]
 
 [project.optional-dependencies]
