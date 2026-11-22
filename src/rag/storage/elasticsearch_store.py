@@ -103,6 +103,47 @@ class ElasticsearchChildTextStore:
             body = term
         return self._search(body, limit)
 
+    def list_matching(self, *, limit: int, scalar: ScalarFilter) -> list[TextHit]:
+        """只按标量条件取出子块。没有文本查询，不走 BM25 打分。"""
+
+        filters = _filters(scalar)
+        if not filters:
+            raise StorageError("元数据过滤至少要有一个标量条件")
+        if limit < 1:
+            raise StorageError("至少取 1 条")
+        response = self._client.search(
+            index=self._index,
+            query={"bool": {"filter": filters}},
+            size=limit,
+            sort=[{"child_id": "asc"}],
+        )
+        hits = []
+        for row in response["hits"]["hits"]:
+            source = row["_source"]
+            raw_score = row.get("_score")
+            hits.append(
+                TextHit(
+                    child_id=source["child_id"],
+                    parent_id=source["parent_id"],
+                    document_id=source["document_id"],
+                    version=source["version"],
+                    content_hash=source["content_hash"],
+                    clause_number=source["clause_number"],
+                    score=0.0 if raw_score is None else float(raw_score),
+                )
+            )
+        return hits
+
+    def fetch_texts(self, child_ids: Sequence[str]) -> dict[str, str]:
+        if not child_ids:
+            return {}
+        response = self._client.mget(index=self._index, ids=list(child_ids))
+        found: dict[str, str] = {}
+        for doc in response["docs"]:
+            if doc.get("found") and doc.get("_source"):
+                found[doc["_id"]] = doc["_source"]["text"]
+        return found
+
     def _search(self, query: dict, limit: int) -> list[TextHit]:
         if limit < 1:
             raise StorageError("至少取 1 条")
