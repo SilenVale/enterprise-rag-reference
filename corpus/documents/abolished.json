@@ -1,0 +1,58 @@
+{
+  "fixture_id": "abolished",
+  "document_id": "syn-legacy",
+  "title": "旧夜间交通补贴口径",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v0",
+  "effective_status": "废止",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-legacy"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第9.1条夜间交通补贴按次计发，每次60元。本口径已经废止。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第9.1条夜间交通补贴按次计发，每次60元。本口径已经废止。",
+  "reference_tables": [],
+  "normalized_text": "第9.1条夜间交通补贴按次计发，每次60元。本口径已经废止。",
+  "normalized_text_sha256": "62227ecb829fd9622ff700ba9b8571a974c106411dcda9bb645f7ff3fc7bc4dc",
+  "expected_reading_order": [
+    "第9.1条夜间交通补贴按次计发，每次60元。本口径已经废止。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第9.1条",
+      "text": "第9.1条夜间交通补贴按次计发，每次60元。本口径已经废止。",
+      "amounts": [
+        "60元"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "notice": "权限标在制度上。实习生的允许范围里没有受限制度。检索时应先按这个范围过滤，夹具本身不执行检索。",
+  "roles": [
+    {
+      "role": "实习生",
+      "allowed_permissions": [
+        "staff"
+      ],
+      "can_audit_abolished": false
+    },
+    {
+      "role": "正式员工",
+      "allowed_permissions": [
+        "staff",
+        "internal-comp"
+      ],
+      "can_audit_abolished": false
+    },
+    {
+      "role": "审计",
+      "allowed_permissions": [
+        "staff",
+        "internal-comp"
+      ],
+      "can_audit_abolished": true
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "syn-duty",
+      "title": "外出办事须知",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-rate-table",
+      "title": "费用标准表",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-seal",
+      "title": "用印留存办法",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-submit",
+      "title": "报销交单时限",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-meal",
+      "title": "伙食补贴办法",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-legacy",
+      "title": "旧夜间交通补贴口径",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-comp",
+      "title": "内部津贴分档",
+      "permission": "internal-comp",
+      "hidden_from_roles": [
+        "实习生"
+      ]
+    },
+    {
+      "document_id": "syn-clause",
+      "title": "设备租赁限额",
+      "permission": "staff",
+      "hidden_from_roles": []
+    },
+    {
+      "document_id": "syn-amount",
+      "title": "一次性补贴",
+      "permission": "staff",
+      "hidden_from_roles": []
+    }
+  ]
+}

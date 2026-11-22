@@ -1,0 +1,201 @@
+{
+  "fixture_id": "cross-page-table",
+  "document_id": "syn-rate-table",
+  "title": "费用标准表",
+  "document_type": "标准表",
+  "permission": "staff",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-rate-table"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "费用标准表。第2.0条夜间交通不再单列，改按表内市内交通一行。已废止口径不得引用。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [
+        {
+          "rows": [
+            [
+              "费用项",
+              "条款编号",
+              "标准"
+            ],
+            [
+              "市内交通",
+              "第2.1条",
+              "80元/日"
+            ],
+            [
+              "住宿",
+              "第2.2条",
+              "420元/晚"
+            ]
+          ],
+          "bbox": [
+            40,
+            480,
+            460,
+            640
+          ],
+          "has_header": true,
+          "closed_bottom": false
+        }
+      ],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    },
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [],
+      "text_tables": [
+        {
+          "rows": [
+            [
+              "伙食",
+              "第2.3条",
+              "100元/日"
+            ]
+          ],
+          "bbox": [
+            40,
+            30,
+            460,
+            90
+          ],
+          "has_header": false,
+          "closed_bottom": true
+        }
+      ],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "费用标准表。第2.0条夜间交通不再单列，改按表内市内交通一行。已废止口径不得引用。\n费用项\t条款编号\t标准\n市内交通\t第2.1条\t80元/日\n住宿\t第2.2条\t420元/晚\n伙食\t第2.3条\t100元/日",
+  "reference_tables": [
+    {
+      "row_count": 4,
+      "col_count": 3,
+      "samples": [
+        [
+          0,
+          0,
+          "费用项"
+        ],
+        [
+          0,
+          1,
+          "条款编号"
+        ],
+        [
+          1,
+          1,
+          "第2.1条"
+        ],
+        [
+          1,
+          2,
+          "80元/日"
+        ],
+        [
+          2,
+          2,
+          "420元/晚"
+        ],
+        [
+          3,
+          0,
+          "伙食"
+        ],
+        [
+          3,
+          2,
+          "100元/日"
+        ]
+      ]
+    }
+  ],
+  "normalized_text": "费用标准表。第2.0条夜间交通不再单列，改按表内市内交通一行。已废止口径不得引用。\n费用项\t条款编号\t标准\n市内交通\t第2.1条\t80元/日\n住宿\t第2.2条\t420元/晚\n伙食\t第2.3条\t100元/日",
+  "normalized_text_sha256": "9310c4bd0bb22ff3381a85ad5cd4d92e43e1d77281687de4bf9af588e326193e",
+  "expected_reading_order": [
+    "费用标准表。第2.0条夜间交通不再单列，改按表内市内交通一行。已废止口径不得引用。"
+  ],
+  "expected_merged_rows": [
+    [
+      "费用项",
+      "条款编号",
+      "标准"
+    ],
+    [
+      "市内交通",
+      "第2.1条",
+      "80元/日"
+    ],
+    [
+      "住宿",
+      "第2.2条",
+      "420元/晚"
+    ],
+    [
+      "伙食",
+      "第2.3条",
+      "100元/日"
+    ]
+  ],
+  "clauses": [
+    {
+      "clause_number": "第2.0条",
+      "text": "费用标准表。第2.0条夜间交通不再单列，改按表内市内交通一行。已废止口径不得引用。",
+      "amounts": []
+    },
+    {
+      "clause_number": "第2.1条",
+      "text": "市内交通\t第2.1条\t80元/日",
+      "amounts": [
+        "80元/日"
+      ],
+      "in_table": true
+    },
+    {
+      "clause_number": "第2.2条",
+      "text": "住宿\t第2.2条\t420元/晚",
+      "amounts": [
+        "420元/晚"
+      ],
+      "in_table": true
+    },
+    {
+      "clause_number": "第2.3条",
+      "text": "伙食\t第2.3条\t100元/日",
+      "amounts": [
+        "100元/日"
+      ],
+      "in_table": true
+    }
+  ]
+}

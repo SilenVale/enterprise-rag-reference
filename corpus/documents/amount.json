@@ -1,0 +1,61 @@
+{
+  "fixture_id": "amount",
+  "document_id": "syn-amount",
+  "title": "一次性补贴",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-amount"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第4.6条一次性安置补贴为2400元。计发时以本条写明的金额为准。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第4.6条一次性安置补贴为2400元。计发时以本条写明的金额为准。",
+  "reference_tables": [],
+  "normalized_text": "第4.6条一次性安置补贴为2400元。计发时以本条写明的金额为准。",
+  "normalized_text_sha256": "b0f8d32f444111bd98b9b98e874d1707cd5c1c824d223b6a5723779135f517bf",
+  "expected_reading_order": [
+    "第4.6条一次性安置补贴为2400元。计发时以本条写明的金额为准。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第4.6条",
+      "text": "第4.6条一次性安置补贴为2400元。计发时以本条写明的金额为准。",
+      "amounts": [
+        "2400元"
+      ],
+      "absent_amounts": [
+        "2500元"
+      ]
+    }
+  ]
+}
