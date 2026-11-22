@@ -1,0 +1,95 @@
+{
+  "fixture_id": "revision",
+  "document_id": "syn-meal",
+  "title": "伙食补贴办法",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v2",
+  "effective_status": "未生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "form": "归档",
+      "document_ref": "syn-meal-v2"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第3.1条伙食补贴按日出差计发，不含招待。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        },
+        {
+          "text": "第3.2条现行伙食补贴为120元/日。",
+          "bbox": [
+            40,
+            130,
+            460,
+            180
+          ],
+          "kind": "body"
+        },
+        {
+          "text": "第3.5条跨市当天往返不发全日补贴，改发40元。",
+          "bbox": [
+            40,
+            220,
+            460,
+            270
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第3.1条伙食补贴按日出差计发，不含招待。\n第3.2条现行伙食补贴为120元/日。\n第3.5条跨市当天往返不发全日补贴，改发40元。",
+  "reference_tables": [],
+  "normalized_text": "第3.1条伙食补贴按日出差计发，不含招待。\n第3.2条现行伙食补贴为120元/日。\n第3.5条跨市当天往返不发全日补贴，改发40元。",
+  "normalized_text_sha256": "09192ff403b7b2d20bc66b08fc4ea22e47b45deb948c2fa2cbcf7e154efeeebe",
+  "expected_reading_order": [
+    "第3.1条伙食补贴按日出差计发，不含招待。",
+    "第3.2条现行伙食补贴为120元/日。",
+    "第3.5条跨市当天往返不发全日补贴，改发40元。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第3.1条",
+      "text": "第3.1条伙食补贴按日出差计发，不含招待。",
+      "amounts": [],
+      "change": "不变"
+    },
+    {
+      "clause_number": "第3.2条",
+      "text": "第3.2条现行伙食补贴为120元/日。",
+      "amounts": [
+        "120元/日"
+      ],
+      "change": "变化"
+    },
+    {
+      "clause_number": "第3.5条",
+      "text": "第3.5条跨市当天往返不发全日补贴，改发40元。",
+      "amounts": [
+        "40元"
+      ],
+      "change": "新增"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "fixture_id": "multi-source",
+  "document_id": "syn-submit",
+  "title": "报销交单时限",
+  "document_type": "制度",
+  "permission": "staff",
+  "version": "v1",
+  "effective_status": "生效",
+  "synthetic": true,
+  "organization": "砚台示范单位",
+  "deliveries": [
+    {
+      "source_id": "制度库",
+      "document_ref": "syn-submit",
+      "form": "归档"
+    },
+    {
+      "source_id": "邮件",
+      "document_ref": "syn-submit",
+      "form": "转发"
+    },
+    {
+      "source_id": "附件",
+      "document_ref": "syn-submit",
+      "form": "附件"
+    }
+  ],
+  "pages": [
+    {
+      "width": 500,
+      "height": 700,
+      "text_layer_blocks": [
+        {
+          "text": "第5.1条返回驻地后15个工作日内提交报销单。逾期不再预支下一笔。",
+          "bbox": [
+            40,
+            40,
+            460,
+            90
+          ],
+          "kind": "body"
+        }
+      ],
+      "text_tables": [],
+      "text_layer_ratio": 1.0,
+      "has_text_layer": true,
+      "image_blocks": [],
+      "image_tables": [],
+      "stamps": []
+    }
+  ],
+  "reference_text": "第5.1条返回驻地后15个工作日内提交报销单。逾期不再预支下一笔。",
+  "reference_tables": [],
+  "normalized_text": "第5.1条返回驻地后15个工作日内提交报销单。逾期不再预支下一笔。",
+  "normalized_text_sha256": "94da4e720febfdd4500f4c3d2ec47e68114a24e741257675bbd9cc9787ac4d0a",
+  "expected_reading_order": [
+    "第5.1条返回驻地后15个工作日内提交报销单。逾期不再预支下一笔。"
+  ],
+  "clauses": [
+    {
+      "clause_number": "第5.1条",
+      "text": "第5.1条返回驻地后15个工作日内提交报销单。逾期不再预支下一笔。",
+      "amounts": [
+        "15个工作日"
+      ]
+    }
+  ]
+}

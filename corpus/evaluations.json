@@ -1,0 +1,234 @@
+{
+  "notice": "这些是评测条目，不是评测报告，也没有跑出指标。边界覆盖新旧版本、废止、跨条款、权限和表内数字。",
+  "entries": [
+    {
+      "suite": "采样",
+      "case_key": "sample-lodging-cap",
+      "payload": {
+        "category": "采样",
+        "question": "外出住宿一晚上限是多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-duty",
+            "version": "v1",
+            "clause_number": "第1.3条",
+            "amount": "420元/晚"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "采样",
+      "case_key": "sample-submit-deadline",
+      "payload": {
+        "category": "采样",
+        "question": "办完回来几天内要交报销单？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-submit",
+            "version": "v1",
+            "clause_number": "第5.1条",
+            "amount": "15个工作日"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "采样",
+      "case_key": "sample-seal-fee",
+      "payload": {
+        "category": "采样",
+        "question": "单次用印工本费是多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-seal",
+            "version": "v1",
+            "clause_number": "第8.4条",
+            "amount": "36元"
+          }
+        ],
+        "note": "这个金额写在盖章挡住的那一句里，规范化文本里必须仍能找到。"
+      }
+    },
+    {
+      "suite": "采样",
+      "case_key": "sample-clause-7-3",
+      "payload": {
+        "category": "采样",
+        "question": "第7.3条的租赁上限是多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-clause",
+            "version": "v1",
+            "clause_number": "第7.3条",
+            "amount": "1350元"
+          }
+        ],
+        "must_not_cite_amount": "980元"
+      }
+    },
+    {
+      "suite": "采样",
+      "case_key": "sample-comp-for-staff",
+      "payload": {
+        "category": "采样",
+        "question": "核心岗津贴一个月多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-comp",
+            "version": "v1",
+            "clause_number": "第6.2条",
+            "amount": "1800元/月"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "边界构造",
+      "case_key": "boundary-version-before-switch",
+      "payload": {
+        "category": "边界构造",
+        "boundary": "新旧版本",
+        "question": "现行伙食补贴一天多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "query_reads_version": "v1",
+        "switch_complete": false,
+        "citations": [
+          {
+            "document_id": "syn-meal",
+            "version": "v1",
+            "clause_number": "第3.2条",
+            "amount": "100元/日"
+          }
+        ],
+        "not_yet_readable": {
+          "document_id": "syn-meal",
+          "version": "v2",
+          "effective_status": "未生效",
+          "amount": "120元/日"
+        }
+      }
+    },
+    {
+      "suite": "边界构造",
+      "case_key": "boundary-abolished-night-subsidy",
+      "payload": {
+        "category": "边界构造",
+        "boundary": "废止制度",
+        "question": "夜间交通补贴还按旧口径发吗？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "default_retrieval_excludes": {
+          "document_id": "syn-legacy",
+          "version": "v0",
+          "effective_status": "废止",
+          "clause_number": "第9.1条",
+          "amount": "60元"
+        },
+        "citations": [
+          {
+            "document_id": "syn-rate-table",
+            "version": "v1",
+            "clause_number": "第2.0条"
+          }
+        ],
+        "note": "60元只出现在已废止条文里。答案若写出这个数，要么对不上现行引用，要么引用了废止版本。"
+      }
+    },
+    {
+      "suite": "边界构造",
+      "case_key": "boundary-cross-clause-lodging",
+      "payload": {
+        "category": "边界构造",
+        "boundary": "跨条款",
+        "question": "外出住宿上限是多少，要同时看哪两条？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-duty",
+            "version": "v1",
+            "clause_number": "第1.3条",
+            "amount": "420元/晚"
+          },
+          {
+            "document_id": "syn-rate-table",
+            "version": "v1",
+            "clause_number": "第2.2条",
+            "amount": "420元/晚"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "边界构造",
+      "case_key": "boundary-intern-cannot-see-comp",
+      "payload": {
+        "category": "边界构造",
+        "boundary": "权限",
+        "question": "核心岗津贴一个月多少？",
+        "role": "实习生",
+        "expect_refusal": "权限不足",
+        "forbidden_document_ids": [
+          "syn-comp"
+        ],
+        "hidden_amount": "1800元/月",
+        "hidden_clause_number": "第6.2条"
+      }
+    },
+    {
+      "suite": "边界构造",
+      "case_key": "boundary-table-city-transport",
+      "payload": {
+        "category": "边界构造",
+        "boundary": "表格里的数字",
+        "question": "市内交通一天补贴多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-rate-table",
+            "version": "v1",
+            "clause_number": "第2.1条",
+            "amount": "80元/日",
+            "location": "跨页合并后的表行"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "已修复badcase",
+      "case_key": "badcase-amount-2400",
+      "payload": {
+        "category": "已修复badcase",
+        "question": "一次性安置补贴是多少？",
+        "role": "正式员工",
+        "expect_refusal": null,
+        "citations": [
+          {
+            "document_id": "syn-amount",
+            "version": "v1",
+            "clause_number": "第4.6条",
+            "amount": "2400元"
+          }
+        ],
+        "fixed_error": {
+          "amount": "2500元",
+          "error_type": "数字",
+          "note": "2500元不在第4.6条原文里，数字校验应拦住这个数。"
+        }
+      }
+    }
+  ]
+}

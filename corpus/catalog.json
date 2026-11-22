@@ -1,0 +1,71 @@
+{
+  "organization": "砚台示范单位",
+  "synthetic": true,
+  "not_a_real_institution": true,
+  "fixtures": [
+    {
+      "fixture_id": "two-column",
+      "rule": "双栏",
+      "files": [
+        "documents/two-column.json"
+      ]
+    },
+    {
+      "fixture_id": "cross-page-table",
+      "rule": "跨页表格",
+      "files": [
+        "documents/cross-page-table.json"
+      ]
+    },
+    {
+      "fixture_id": "scan-stamp",
+      "rule": "扫描件含盖章遮挡",
+      "files": [
+        "documents/scan-stamp.json"
+      ]
+    },
+    {
+      "fixture_id": "multi-source",
+      "rule": "同一份文件多来源",
+      "files": [
+        "documents/multi-source.json"
+      ]
+    },
+    {
+      "fixture_id": "revision",
+      "rule": "修订",
+      "files": [
+        "documents/revision-v1.json",
+        "documents/revision-v2.json"
+      ]
+    },
+    {
+      "fixture_id": "abolished",
+      "rule": "废止",
+      "files": [
+        "documents/abolished.json"
+      ]
+    },
+    {
+      "fixture_id": "restricted",
+      "rule": "权限",
+      "files": [
+        "documents/restricted.json"
+      ]
+    },
+    {
+      "fixture_id": "clause-number",
+      "rule": "条款编号",
+      "files": [
+        "documents/clause-number.json"
+      ]
+    },
+    {
+      "fixture_id": "amount",
+      "rule": "金额",
+      "files": [
+        "documents/amount.json"
+      ]
+    }
+  ]
+}
